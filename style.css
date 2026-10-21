@@ -1,0 +1,151 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f6fb;
+    color: #243047;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #0d6efd; 
+}
+
+.navbar-brand {
+    letter-spacing: 0.3px;
+}
+
+.navbar-text {
+    color: #e4eaf5;
+    font-size: 0.9rem;
+}
+
+.todo-card {
+    max-width: 760px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(31, 48, 78, 0.08);
+}
+
+.page-title {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 44px;
+}
+
+.add-button-wrap {
+    display: flex;
+    align-items: end;
+}
+
+.add-button-wrap .btn {
+    min-height: 44px;
+}
+
+.error-message {
+    min-height: 20px;
+    margin: 5px 0 0;
+    color: #c62828;
+    font-size: 0.9rem;
+}
+
+.filter-btn {
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+    background-color: #ffffff;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: #ffffff;
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+    z-index: 1;
+}
+
+.task-counter {
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: #0d6efd; 
+}
+
+.task-list {
+    gap: 10px;
+    border: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid #e1e7f0 !important;
+    border-radius: 10px !important;
+}
+
+.task-check {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.task-text {
+    flex-grow: 1;
+    overflow-wrap: anywhere;
+}
+
+.task-item.completed .task-text {
+    color: #8791a2;
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    flex-shrink: 0;
+}
+
+.empty-message {
+    color: #7b879a;
+    background-color: #f8faff;
+    border: 1px dashed #d9e1ee;
+    border-radius: 10px;
+}
+
+footer {
+    color: #758198;
+}
+
+/* application on a narrow screen */
+@media (max-width: 576px) {
+    .navbar-text {
+        display: none;
+    }
+
+    .todo-card {
+        padding: 20px 16px;
+    }
+
+    .page-title {
+        font-size: 1.7rem;
+    }
+
+    .task-item {
+        gap: 8px;
+        padding: 12px 10px;
+    }
+
+    .delete-btn {
+        padding: 5px 8px;
+    }
+}
